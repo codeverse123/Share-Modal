@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <Button class="viewModal" onclick="showModal()">View Modal</Button>
+
+    <!-- Modal -->
+    <div class="modal" id="myModal">
+        <div class="sharemodal">
+            <span class="share">Share Modal</span>
+            <img src="Images/cross.png" align="right" alt="" class="close" onclick="closeModal()">
+        </div>
+        <div class="line"></div>
+        <div class="sharewith sharemodal">
+            <span class="share_link">Share with</span>
+            <div class="app_icons">
+                <img src="Images/facebook.png" alt="" class="icons">
+                <img src="Images/whatsapp.png" alt="" class="icons">
+                <img src="Images/twitter.png" alt="" class="icons">
+                <img src="Images/instagram.png" alt="" class="icons">
+            </div>
+            <span class="page_link">Page Link</span>
+            <div class="link">
+                <img src="Images/" alt="" srcset="">
+                <input type="text" readonly value="https://www.example.com" class="textlink" id="copytxtlink">
+                <Button id="copyLink">Copy</Button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
